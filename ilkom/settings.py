@@ -28,7 +28,12 @@ SECRET_KEY = '61ck24x)&p!no36ppntdsb34-$b)$lo%ebt-)wg*rf0n86_mkj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'v2.ilkom.unej.ac.id',
+    'ilkom.unej.ac.id',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
