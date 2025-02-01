@@ -1,0 +1,16 @@
+{% for child in children %}
+    {% if child.children %}
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ child.get_menu_title }}</a>
+            <div class="dropdown-menu fade-down m-0">
+                {% for subchild in child.children %}
+                    <a href="{{ subchild.get_absolute_url }}" class="dropdown-item">{{ subchild.get_menu_title }}</a>                
+                {% endfor %}
+                
+            </div>
+        </div>
+    {% else %}
+        <a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}" class="nav-item nav-link {% if child.ancestor %}active{% endif %}">{{ child.get_menu_title }}</a>
+    {% endif %}
+
+{% endfor %}
