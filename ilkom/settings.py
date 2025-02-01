@@ -213,7 +213,9 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    # https://themewagon.github.io/elearning/index.html
+    ('themewagon/elearning/index.html', 'Themewagon - elearning - index'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
